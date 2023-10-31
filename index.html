@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="topnav" id="myTopnav">
+    <a href="#home" class="active"><img class="logo" src="./img/logo-sem-fundo.png" alt=""></a>
+    <div class="item">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="" > <button>AGENDE A SUA CONSULTA</button></a>
+</div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+  <main>
+    <div class="banner">
+        <div class="main-nav">
+            <a href="#home" class="active"><img class="logo" src="./img/logo-sem-fundo.png" alt=""></a>
+            <div class="item">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href=""> <button>AGENDE A SUA CONSULTA</button></a>
+        </div>
+        <img class="img-banner" src="./img/banner-removebg-preview.png" alt="">
+        <div class="conteudo-banner">
+        <div class="text-banner">
+            <div class="textos">
+               
+                  <h5>BOAS-VINDAS A MIRANDA HEALTH 1 </h5>   
+
+                    <h1>Saúde mental, por mais vida e
+                    menos depressão</h1>
+
+                         <p class="teste"> "Sou psicóloga clínica no consultório online com o foco no tratamento da
+                    depressão para jovens e adultos. Minha missão dentro da psicologia é diminuir
+                    o adoecimento mental entre as mulheres, principalmente a depressão,
+                    promovendo qualidade de vida, bem estar e empodeiramento feminino.”       </p>
+               
+                    <button class="btn-banner">AGENDE A SUA CONSULTA</button>
+                    </div>
+                        <table>
+                            <tr>
+                                <th>Excelência </th>
+                                <th>Transparência </th>
+                                <th>Acolhimento</th>
+            
+                            </tr>
+                            <tr>
+                                <td>Ética e Qualidade</td>
+                                <td>Gentileza e Criatividade</td>
+                                <td>Melhora Contínua</td>
+                            </tr>
+                        </table>
+                 </div>
+        </div>
+        
+    </div>
+
+  </main>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+
+    window.onscroll = function() {
+  var topnav = document.getElementById("myTopnav");
+  if (window.scrollY > 100) { // Mude o valor 100 para controlar quando a barra aparece
+    topnav.classList.add("topnav-fixed");
+    topnav.classList.remove("topnav-hidden");
+  } else {
+    topnav.classList.remove("topnav-fixed");
+    topnav.classList.add("topnav-hidden");
+  }
+};
+
+    </script>
+</body>
+</html>
